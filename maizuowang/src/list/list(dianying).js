@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import {BrowserRouter as Router,Route,Link,NavLink} from 'react-router-dom';
+import {BrowserRouter as Router,Route,NavLink} from 'react-router-dom';
 //引入组件
 import ListNow from './component/list-now.js';
 import ListComing from './component/list-coming.js';
@@ -33,20 +33,5 @@ class Lists1 extends Component{
     }
 }
 
-var List1=connect(
-    function(state,ownPorps){
-        return{
-            
-        }
-    },
-    function(dispatch,ownProps){
-        return{
-            change:function(){
-                dispatch:({
-
-                })
-            }
-        }
-    }
-)(Lists1);
+var List1=connect()(Lists1);
 export default List1;

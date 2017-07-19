@@ -41,6 +41,7 @@
 /* 修改样式 */
  html,body{
   height: 100%;
+  background: #eee;
 }
 .header{
   height: 0.9rem;
@@ -48,7 +49,8 @@
   position: fixed;
   left: 0;
   top: 0;
-   /* z-index: 10;  */
+   z-index: 0;  
+  
 }
 .am-navbar{
   background: #282828;
@@ -56,12 +58,18 @@
 }
 .my-drawer{
   width: 100%;
+  /* z-index: 20; */
+  /* display: none */
 }
 .my-drawer .am-drawer-sidebar{
   background: #282828;
 }
 .am-drawer-sidebar{
-  width: 60%
+  width: 60%;
+  z-index: 20;
+  position: absolute;
+  left: 0;
+  top: 0.9rem;
 } 
 .my-drawer .am-drawer-sidebar .am-list{
    
@@ -107,8 +115,9 @@
 .homepage{
   width: 100%;
   flex: 1;
-  overflow:auto;
-  padding: 0.9rem 0
+  overflow:auto; 
+  margin-top: 0.9rem;
+  z-index: 10;
 }
 .body{
   width: 100%;
@@ -116,7 +125,7 @@
   background: #eee;
 }
 .am-drawer-overlay{
- 
+ /* display: none */
 }
 .am-drawer-draghandle{
   display: none
@@ -139,3 +148,73 @@
   width: 6rem;
   padding: 0;
 } */
+
+
+
+/* 详情页样式 */
+.details{
+  width: 100%;
+  margin-top: 0.9rem;
+  display: flex;
+  flex-direction: column;
+}
+.details img{
+  width: 100%;
+  height: auto;
+
+}
+.details-m{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 5%;
+  color: #444;
+}
+.details-m div{
+  height: 0.5rem;
+  display: flex;
+  width: 100%;
+  font-size: 0.2rem;
+ align-items: center;
+}
+.details-m div ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.details-m div ul li{
+  border-right: 1px solid #444;
+  padding: 0 0.2rem;
+}
+.details-m div ul li:last-child{
+  border-right: 0;
+}
+.details-m div p:first-child{
+  width: 20%;
+  
+}
+.details-m p{
+  font-size: 0.2rem;
+}
+button{
+  width: 40%;
+  height: 0.8rem;
+  background: orange;
+  border-radius: 0.4rem;
+  margin: 0.5rem 30%;
+  position: fixed;
+  left: 0;
+  bottom: 0
+}
+
+/* 影院样式 */
+.my-accordion .pad .am-accordion-content-box {
+  padding: 0.2rem;
+}
+.my-accordion .my-list .am-list-body {
+  border-top: 0;
+}
+.my-accordion .my-list .am-list-body:after {
+  border-bottom: 0;
+}

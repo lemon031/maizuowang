@@ -3,9 +3,9 @@ import { connect } from 'react-redux';
 //引入头部组件
 import { Drawer, List, NavBar,Icon } from 'antd-mobile';
 //引入路由
-import {BrowserRouter as Router,Route,Link,NavLink} from 'react-router-dom';
+import {BrowserRouter as Router,Route,NavLink} from 'react-router-dom';
 //引入各组件
-// import Homepage from '../homepage/homepage.js'
+import Homepage from '../homepage/homepage.js'
 import Mypage from '../mypage/mypage.js'
 import Detail from '../details/details.js'
 import List1 from '../list/list(dianying).js'
@@ -13,9 +13,11 @@ import List2 from '../list/list(yingyuan).js'
 
 //引入头部样式
 import './header.css'
+// import $ from 'jquery';
 
-
-
+// $('.am-navbar-left').click(function(){
+//     $('.my-drawer').css('display','block')
+// })
 
 
 // class Header extends Component {
@@ -127,14 +129,14 @@ class Headers extends Component {
                             open={this.state.open}
                             onOpenChange={this.onOpenChange}
                         >
-                            
+                            q
                         </Drawer>
                     </div>
-                    {/* <Route exact path="/"  component={Homepage}/> */}
+                     <Route exact path="/"  component={Homepage}/> 
                     <Route exact path="/login"  component={Mypage}/>
                     <Route exact path="/film/now-playing" component={List1}/> 
                     <Route exact path="/cinema" component={List2}/> 
-                    
+                    <Route exact path="/film_detail/:id" component={Detail}/>
                 </div>
             </Router>
             

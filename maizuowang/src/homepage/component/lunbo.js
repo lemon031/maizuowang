@@ -83,7 +83,7 @@ class Lunbos extends Component {
             <Carousel
                 className="my-carousel"
                 
-                autoplay={false}
+                autoplay={true}
                 infinite
                 selectedIndex={3}
                 swipeSpeed={35}

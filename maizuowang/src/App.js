@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 //引入路由
-import {BrowserRouter as Router,Route,Link,NavLink} from 'react-router-dom';
+import {BrowserRouter as Router} from 'react-router-dom';
 //引入首页
-import Homepage from './homepage/homepage.js'
 import Header from './public/header.js'
 
 class Apps extends Component {
@@ -12,7 +11,6 @@ class Apps extends Component {
             <Router>
                 <div className="App">
                     <Header />
-                    {/* <Homepage /> */}
                 </div>
             </Router> 
 

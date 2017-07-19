@@ -8,26 +8,11 @@ class Mypages extends Component{
         return(
             // <div className='lunbo'>
             //     <Lunbo />
-            // </div>
-            <h1>我的页面</h1>
+            // </div
+            <a href="http://www.baidu.com" style={{width:"200px",marginTop:"300px",display:"block",background:"red"}}>木木木木木木木木木木木木林桂林</a>
         )
     }
 }
 
-var Mypage=connect(
-    function(state,ownPorps){
-        return{
-            
-        }
-    },
-    function(dispatch,ownProps){
-        return{
-            change:function(){
-                dispatch:({
-
-                })
-            }
-        }
-    }
-)(Mypages);
+var Mypage=connect()(Mypages);
 export default Mypage;
