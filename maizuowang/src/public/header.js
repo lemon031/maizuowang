@@ -129,12 +129,13 @@ class Headers extends Component {
                             open={this.state.open}
                             onOpenChange={this.onOpenChange}
                         >
-                            q
+                            ''
                         </Drawer>
                     </div>
                      <Route exact path="/"  component={Homepage}/> 
                     <Route exact path="/login"  component={Mypage}/>
                     <Route exact path="/film/now-playing" component={List1}/> 
+                    <Route  exact path="/film/coming-soon" component={List1}/>
                     <Route exact path="/cinema" component={List2}/> 
                     <Route exact path="/film_detail/:id" component={Detail}/>
                 </div>

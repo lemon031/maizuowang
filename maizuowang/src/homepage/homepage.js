@@ -20,7 +20,7 @@ class Homepages extends Component{
                      <hr/>
                      <p className='will'><span>即将上映</span></p>
                      <Coming />
-                     <p className='list-p'><a href='localhost:3000/film/will-coming'>更多即将上映电影</a></p>
+                     <p className='list-p'><a href='http://localhost:3000/film/coming-soon'>更多即将上映电影</a></p>
                 </div>
             </div>
         )

@@ -29,7 +29,7 @@ class Nows extends Component{
                         this.state.data.map(function(item,index){
                             return(
                                 <li className="now-list" key={index}>
-                                   { console.log(item.id) }
+                                   {/* { console.log(item.id) } */}
                                     <NavLink to={'/film_detail/'+item.id } className="now-lista">
                                          <img src={item.cover.origin}/> 
                                         <div className="now-b">

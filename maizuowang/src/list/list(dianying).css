@@ -28,7 +28,7 @@ ul,li,h4,p{
 .list-now{
 
 }
-.list-now ul li  img{
+.list-now ul li a img{
     width: 1.2rem;
     height: 1.6rem;
 }
@@ -37,7 +37,7 @@ ul,li,h4,p{
     flex-direction: column;
     border:0;
 }
-.list-now ul li{
+.list-now ul li a{
     display: flex;
     justify-content: space-between;
     padding: 0.4rem 0;
@@ -73,4 +73,20 @@ ul,li,h4,p{
 .list-rb p{
     width: 50%;
     text-align: left;
+}
+
+.list-rbc{
+    display: flex;
+    justify-content: space-between;
+    color: orangered;
+    font-size: 0.2rem;
+}
+.list-rbc p{
+    width: 50%;
+    text-align: left;
+}
+.actors{
+    display: flex;
+    flex-wrap: wrap;
+    
 }

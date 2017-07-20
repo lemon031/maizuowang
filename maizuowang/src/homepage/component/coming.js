@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import {BrowserRouter as Router,Route,Link,NavLink} from 'react-router-dom';
 import $ from 'jquery';
 
 
@@ -10,11 +11,11 @@ class Nows extends Component{
     componentDidMount() {
         // simulate img loading
         var that = this;
-        $.get('http://localhost:8080/now', function (res) {
+        $.get('http://localhost:8080/coming', function (res) {
             var res = JSON.parse(res)
             // var data=res.
            var data=res.data.films;
-            console.log(data)
+            // console.log(data)
             that.setState({
                 data:data
             });
@@ -26,7 +27,7 @@ class Nows extends Component{
                 <ul className="now">
                     { 
                         this.state.data.map(function(item,index){
-                            console.log(item);
+                            {/* console.log(item); */}
                             return(
                                 <li className="now-list" key={index}>
                                     <a href='#' className="now-lista">
