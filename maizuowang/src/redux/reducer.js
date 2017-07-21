@@ -1,8 +1,8 @@
 function reducer (state,action){
     switch(action.type){
-        case 'qw':
+        case 'HEADER':
             return Object.assign({},state,{
-
+                title:action.title
             })
        case 'LIST':
             return Object.assign({},state,{
@@ -16,6 +16,10 @@ function reducer (state,action){
             return Object.assign({},state,{
                 cinema:action.cinema
             })   
+        case 'MYPAGE':
+            return Object.assign({},state,{
+                txt:action.txt
+            })
     default:
         return state;
     }

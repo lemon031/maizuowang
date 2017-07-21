@@ -101,7 +101,8 @@ body{
     font-size: 0.2rem;
     display: flex;
     flex-direction: column;
-    justify-content: center
+    justify-content: center;
+    text-align: left;
 }
 .now-blt{
     color: #aaa;

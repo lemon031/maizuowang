@@ -70,7 +70,7 @@ class Lists2 extends Component {
     render() {
         return (
 
-            <div style={{ marginTop: 45, marginBottom: 10 }}>
+            <div >
                 <Accordion
                     defaultActiveKey="0"
                     className="my-accordion"

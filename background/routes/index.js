@@ -36,7 +36,7 @@ router.get('/lunbo', function (req, res) {
     })
   })
 })
-//首页获取已更新列表
+//首页获取列表
 router.get('/now', function (req, res) {
   var page = req.query.page;
   var count = req.query.count;

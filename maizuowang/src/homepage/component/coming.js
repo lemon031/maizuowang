@@ -30,7 +30,7 @@ class Nows extends Component{
                             {/* console.log(item); */}
                             return(
                                 <li className="now-list" key={index}>
-                                    <a href='#' className="now-lista">
+                                    <NavLink to={'/film_detail/'+item.id} className="now-lista">
                                          <img src={item.cover.origin}/> 
                                         <div className="now-b">
                                             <div className="now-bl">
@@ -44,7 +44,7 @@ class Nows extends Component{
                                             </div>
                                             <p className="now-br">{item.grade}</p>
                                         </div>
-                                    </a>
+                                    </NavLink>
                                     
                                 </li>
                             )

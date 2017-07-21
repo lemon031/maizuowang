@@ -9,7 +9,7 @@ class Details extends Component {
 
     // }
     render() {
-        console.log(this.props.data);
+        // console.log(this.props.data);
         if (this.props.data != '') {
             return (
                 <div className='details'>
@@ -54,7 +54,7 @@ class Details extends Component {
                 </div>
             )
         } else {
-            return <div>123</div>
+            return <div>加载中....</div>
         }
 
 

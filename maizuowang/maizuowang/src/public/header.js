@@ -133,7 +133,7 @@ class Headers extends Component {
                         >
                             <Route exact path="/" component={Homepage} />
                             <Route exact path="/login" component={Mypage} />
-                            <Route exact path="/loginok" component={Mypageok} />
+                             <Route exact path="/loginok" component={Mypageok} />
                             <Route exact path="/film/now-playing" component={List1} />
                             <Route  path="/film/coming-soon" component={List1} />
                             <Route exact path="/cinema" component={List2} />
